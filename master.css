@@ -39,6 +39,9 @@ button {
   padding: 0.4rem 0 0.4rem 1.2rem;
   margin: 0.2rem 0;
   text-align: left;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
 }
 
 h2,h3 {
@@ -64,7 +67,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-i {
+i.fa {
   font-size: 1.3rem;
   margin-right: 0.3rem;
 
@@ -449,6 +452,8 @@ strong{
   margin-top: 2rem;
   background-color: #336bc4;
   color: #FFFFFF;
+  font-weight: 600;
+  justify-content: center;
 }
 /* Footer */
 .footer {
