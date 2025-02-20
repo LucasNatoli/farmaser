@@ -14,6 +14,7 @@ html {
   color: #414141;
   font-size: 1.125em;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -173,6 +174,9 @@ strong{
   background: linear-gradient(to bottom, #92b0e0, white);
   margin-bottom: -360px;
 }
+.instagram-section a {
+  color:#336bc4;
+}
 .instagram-section-inner {
   transform: translateY(-20rem);
 }
@@ -181,6 +185,7 @@ strong{
   align-items: center;
   justify-content: center;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .instagram-grid {
