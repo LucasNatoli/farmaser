@@ -37,13 +37,14 @@ button {
   border: #336bc4 1px solid;
   border-radius: 15px;
   padding: 0.4rem 0 0.4rem 1.2rem;
-  margin: 0.2rem;
+  margin: 0.2rem 0;
   text-align: left;
 }
 
 h2,h3 {
   font-weight: 600;
   color: #336bc4;
+  line-height: 2rem;
 }
 
 h2 {
@@ -398,22 +399,56 @@ strong{
 /* Contacto */
 
 .contacto-title {
-  padding: 2rem 0 0.1rem 0;
+  padding: 2rem 0;
   background-color: #d6e6d1;
 }
+.contacto-title h2 {
+  margin-bottom: 0;
+}
+
 .branches {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  display: flex;
   max-width: 1200px;
-  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  margin: auto;
   background-image: url("img/fondo-contacto.png");
   background-size:contain;
-  padding: 0.3rem;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .branch {
   display: flex;
   flex-direction: column;
+  padding: .5rem;
+}
+
+.branch h3 {
+  margin-bottom: .5rem;
+
+}
+.branch-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.branch-col-1 {
+  min-width: 380px;
+  flex-basis: 33%;
+}
+.branch-col-2 {
+  flex-grow: 1;
+  flex-basis: 66%;
+}
+.branch2, .branch3 {
+  flex-basis: 50%;
+  min-width: 380px;
+}
+.laboratorio button {
+  margin-top: 2rem;
+  background-color: #336bc4;
+  color: #FFFFFF;
 }
 /* Footer */
 .footer {
@@ -550,5 +585,12 @@ strong{
   .cerca-tuyo-text p {
     font-size: 1.2rem;
     line-height: 1.5em;
+  }
+  .branches, .branch {
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  .branch-col-1, .branch-col-2, .branch-row {
+    flex-basis: 100%;
   }
 }
