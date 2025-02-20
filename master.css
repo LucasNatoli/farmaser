@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+a:hover {
+  color: #ffd700;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 3.9rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  justify-content: flex-end;
+  /*left: 0;*/
+  right: 0;
+  padding: 1rem;
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  text-shadow: 0px 0px 19px rgba(0,0,0,0.98), 0px 0px 5px rgba(0,0,0,0.98);
+  color: #FFFFFF;
+}
+
+  /*nav:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}*/
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+strong{
+  font-weight: 600;
+}
+
+/* Hero */
+
+.hero {
+  height: 90vh; /* Cambiado a 50% de la altura de la pantalla */
+  background-image: url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 80px 20px 60px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.hero-content img.logo {
+  max-width: 450px;
+}
+
+.olive-divider {
+  background-color: #dad8c5;
+  height: 15px;
+}
+.blue-divider {
+  background-color: #336bc4;
+  height: 15px;
+}
+/* Servicios */
+
+.servicios {
+  padding: 5.5rem;
+  text-align: center;
+  margin-bottom: 260px;
+}
+
+.servicios h2 {
+  color: #336bc4;
+  margin-bottom: 3rem;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.servicio img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.servicio h3 {
+  color: #336bc4;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.servicio p {
+  color: #414141;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Instagram */
+
+.instagram-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, #92b0e0, white);
+  margin-bottom: -360px;
+}
+.instagram-section-inner {
+  transform: translateY(-20rem);
+}
+.instagram-section h3 {
+  color: #336bc4;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 580px;
+  margin: 2rem auto;
+}
+
+.instagram-item {
+  position: relative;
+  aspect-ratio: 0;
+  overflow: hidden;
+}
+
+.instagram-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Location */
+
+.location-section {
+  padding: 0rem 5rem 6rem;
+  text-align: left;
+  position: relative;
+}
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.location-info h2 {
+  color: #4d4d4d;
+  font-weight: 700;
+}
+
+.location-info h3 {
+  color: #666;
+  font-size: 1.8rem;
+}
+
+.location-info p {
+  color: #336bc4;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.map-container {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 420px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Quienes Somos */
+
+.quienes-somos-section {
+  padding: 5rem;
+  background-color: white;
+  position: relative;
+}
+
+.background-circle {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 200%;
+    border-top: 10px green solid;
+    border-right: 10px green solid;
+    border-bottom: 4px green solid;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    left: -173%;
+    z-index: 0;
+}
+
+
+.quienes-somos-section h2 {
+  color: #336bc4;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.quienes-somos-section h3 {
+  color: #336bc4;
+  margin-bottom: 1rem;
+}
+
+.mission, .team, .values {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mission .img {
+  margin-right: 50px;
+  flex-basis: 30%;
+  position: relative;
+  z-index: 2;
+}
+
+.mission .content {
+  flex-basis: 70%;
+}
+
+.mission p, .team p, .values p {
+  font-size: 1.5rem;
+  color:#4d4d4d;
+  font-weight: 300;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+}
+
+.team .img {
+  flex-basis: 40%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+
+.team .content {
+  flex-basis: 60%;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+}
+
+.values .img {
+  position: relative;
+  z-index: 2;
+  margin-right: 50px;
+  flex-basis: 30%;
+}
+
+.values .content {
+  flex-basis: 70%;
+}
+
+.cerca-tuyo {
+  background: linear-gradient(to bottom, #fff, #c2d3ed);
+  padding-bottom: 4rem;
+}
+
+.cerca-tuyo-hero {
+  height: 557px; 
+  background-image: url("img/cerca-tuyo.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+ 
+}
+
+.cerca-tuyo h2 {
+  color: #336bc4;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cerca-tuyo-text {
+  color: #5a5a5a;
+  font-size: 5rem;
+  padding: 4rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 300;
+}
+
+.cerca-tuyo-text p{
+  font-size: 2rem;
+  line-height: 1.75em;
+}
+
+.cerca-tuyo-text p strong {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #336bc4;
+  padding: 2rem 5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .logo {
+  max-width: 300px;
+}
+
+.footer .insta, .footer .email {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .mission{
+    flex-direction: column;
+  }
+  .team{
+    flex-direction: column;
+  }
+  .values{
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .servicios h2 {
+    font-size: 5rem;
+  }
+  .servicio img {
+    width: 200px;
+    height: 200px;
+  }
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .location-container {
+    grid-template-columns: 1fr;
+  }
+  .location-info h2 {
+    font-size: 2rem;
+  }
+  .location-info h3 {
+    font-size: 1.5rem;
+  }
+  .footer {
+    flex-direction:column;
+  }
+}
