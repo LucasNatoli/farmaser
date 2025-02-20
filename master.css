@@ -72,7 +72,7 @@ i.fa {
 }
 p {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 nav {
@@ -192,7 +192,7 @@ strong{
   padding: 4rem 2rem;
   text-align: center;
   background: linear-gradient(to bottom, #92b0e0, white);
-  margin-bottom: -360px;
+  margin-bottom: -180px;
 }
 .instagram-section a {
   color:#336bc4;
@@ -310,11 +310,14 @@ strong{
   align-items: center;
 }
 
+.img {
+  margin-right: 1.2rem;
+  z-index: 2;  
+}
+
 .mission .img {
-  margin-right: 50px;
   flex-basis: 30%;
   position: relative;
-  z-index: 2;
 }
 
 .mission .content {
@@ -330,7 +333,6 @@ strong{
   flex-basis: 40%;
   display: flex;
   position: relative;
-  z-index: 2;
   justify-content: center;
 }
 
@@ -345,8 +347,6 @@ strong{
 
 .values .img {
   position: relative;
-  z-index: 2;
-  margin-right: 50px;
   flex-basis: 30%;
 }
 
@@ -379,19 +379,17 @@ strong{
 
 .cerca-tuyo-text {
   color: #5a5a5a;
-  font-size: 5rem;
   padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-weight: 300;
 }
 
-.cerca-tuyo-text p{
+/* .cerca-tuyo-text p{
   font-size: 2rem;
   line-height: 1.75em;
-}
+} */
 
 .cerca-tuyo-text p strong {
   font-weight: 700;
@@ -411,7 +409,7 @@ strong{
 
 .branches {
   display: flex;
-  padding: 0 3rem 2rem;
+  padding: 1.2rem 3rem 2rem;
   margin: auto;
   background-image: url("img/fondo-contacto.png");
   background-size:contain;
