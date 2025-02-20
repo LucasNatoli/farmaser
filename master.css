@@ -28,6 +28,19 @@ a:hover {
   color: #ffd700;
 }
 
+
+button {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1rem;
+  color: #336bc4;
+  background-color: transparent;
+  border: #336bc4 1px solid;
+  border-radius: 15px;
+  padding: 0.4rem 0 0.4rem 1.2rem;
+  margin: 0.2rem;
+  text-align: left;
+}
+
 h2,h3 {
   font-weight: 600;
   color: #336bc4;
@@ -50,6 +63,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
+i {
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+
+}
 p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -334,6 +352,9 @@ strong{
   flex-basis: 70%;
 }
 
+/* Cerca tuyo */
+
+
 .cerca-tuyo {
   background: linear-gradient(to bottom, #fff, #c2d3ed);
   padding-bottom: 4rem;
@@ -374,6 +395,27 @@ strong{
   font-weight: 700;
 }
 
+/* Contacto */
+
+.contacto-title {
+  padding: 2rem 0 0.1rem 0;
+  background-color: #d6e6d1;
+}
+.branches {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url("img/fondo-contacto.png");
+  background-size:contain;
+  padding: 0.3rem;
+}
+.branch {
+  display: flex;
+  flex-direction: column;
+}
+/* Footer */
 .footer {
   background-color: #336bc4;
   padding: 2rem 5rem;
