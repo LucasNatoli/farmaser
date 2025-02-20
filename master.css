@@ -11,6 +11,9 @@ html {
   height: 100%;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 300;
+  color: #414141;
+  font-size: 1.125em;
+  line-height: 1.6;
 }
 
 a {
@@ -24,14 +27,20 @@ a:hover {
   color: #ffd700;
 }
 
+h2,h3 {
+  font-weight: 600;
+  color: #336bc4;
+}
+
 h2 {
-  font-weight: 400;
-  font-size: 3.9rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -129,11 +138,6 @@ strong{
   margin-bottom: 260px;
 }
 
-.servicios h2 {
-  color: #336bc4;
-  margin-bottom: 3rem;
-}
-
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -146,7 +150,6 @@ strong{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
 }
 
 .servicio img {
@@ -157,15 +160,7 @@ strong{
   margin-bottom: 1.5rem;
 }
 
-.servicio h3 {
-  color: #336bc4;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .servicio p {
-  color: #414141;
-  line-height: 1.6;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -182,12 +177,10 @@ strong{
   transform: translateY(-20rem);
 }
 .instagram-section h3 {
-  color: #336bc4;
-  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  font-weight: 400;
 }
 
 .instagram-grid {
@@ -229,11 +222,15 @@ strong{
 .location-info h2 {
   color: #4d4d4d;
   font-weight: 700;
+  text-align: left;
+  margin: 0;
+  line-height: 1em;
 }
 
 .location-info h3 {
   color: #666;
   font-size: 1.8rem;
+  text-align: left;
 }
 
 .location-info p {
@@ -280,26 +277,12 @@ strong{
     z-index: 0;
 }
 
-
-.quienes-somos-section h2 {
-  color: #336bc4;
-  margin-bottom: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.quienes-somos-section h3 {
-  color: #336bc4;
-  margin-bottom: 1rem;
-}
-
 .mission, .team, .values {
   display: flex;
   flex-direction: row;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  align-items: center;
 }
 
 .mission .img {
@@ -311,12 +294,6 @@ strong{
 
 .mission .content {
   flex-basis: 70%;
-}
-
-.mission p, .team p, .values p {
-  font-size: 1.5rem;
-  color:#4d4d4d;
-  font-weight: 300;
 }
 
 .team {
@@ -358,7 +335,7 @@ strong{
 }
 
 .cerca-tuyo-hero {
-  height: 557px; 
+  height: 600px; 
   background-image: url("img/cerca-tuyo.png");
   background-size: cover;
   background-position: center;
@@ -369,22 +346,13 @@ strong{
   text-align: center;
   color: white;
   position: relative;
- 
-}
-
-.cerca-tuyo h2 {
-  color: #336bc4;
-  font-size: 3.5rem;
-  margin: 2rem 0 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 5.5rem;
 }
 
 .cerca-tuyo-text {
   color: #5a5a5a;
   font-size: 5rem;
-  padding: 4rem 3rem;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,18 +374,26 @@ strong{
   padding: 2rem 5rem;
   color: #fff;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer .logo {
   max-width: 300px;
 }
 
+.footer .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 45%;
+}
+
 .footer .insta, .footer .email {
   display: flex;
   align-items: center;
+  padding: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -430,15 +406,13 @@ strong{
   .values{
     flex-direction: column;
   }
-  h1 {
+  h2 {
     font-size: 2rem;
   }
   p {
     font-size: 1rem;
   }
-  .servicios h2 {
-    font-size: 5rem;
-  }
+
   .servicio img {
     width: 200px;
     height: 200px;
@@ -456,6 +430,10 @@ strong{
     font-size: 1.5rem;
   }
   .footer {
-    flex-direction:column;
+    justify-content: center;
+  }
+  .footer .social {
+    flex-basis: 100%;
+    flex-wrap: wrap;
   }
 }
