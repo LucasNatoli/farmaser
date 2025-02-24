@@ -145,7 +145,7 @@ strong{
 }
 
 .olive-divider {
-  background-color: #dad8c5;
+  background-color: #d6e6d1;
   height: 15px;
 }
 .blue-divider {
@@ -466,20 +466,25 @@ strong{
 }
 
 .footer .logo {
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .footer .social {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-basis: 45%;
+  flex-basis: 75%;
 }
 
-.footer .insta, .footer .email {
+.footer .insta, .footer .email .fb {
   display: flex;
   align-items: center;
   padding: 1.2rem;
+}
+
+.social div a {
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 /* Tablet (768px - 1024px) */
