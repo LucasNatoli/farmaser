@@ -40,6 +40,7 @@ button {
   font-weight: 400;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 h2,h3 {
@@ -234,7 +235,7 @@ strong{
   padding: 0rem 5rem 6rem;
   text-align: left;
   position: relative;
-  padding-bottom: 12rem;
+  padding-bottom: 2rem;
 }
 
 .location-container {
