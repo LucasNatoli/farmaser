@@ -505,6 +505,9 @@ strong{
   p {
     font-size: 1rem;
   }
+  #card_9{
+    display:none;
+  }
 
   .servicio img {
     width: 200px;
@@ -513,14 +516,27 @@ strong{
   .instagram-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .instagram-section{
+    margin-bottom: -18rem;
+  }
+
   .location-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .location-info h2 {
     font-size: 2rem;
   }
   .location-info h3 {
     font-size: 1.5rem;
+  }
+  .location-info p {
+    margin-bottom: 1.5rem;
+  }
+
+  .map-container {
+    max-width: 100%;
   }
   .footer {
     justify-content: center;
